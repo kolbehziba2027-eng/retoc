@@ -50,3 +50,7 @@ debug = true
 [profile.dist]
 inherits = "release"
 lto = "thin"
+
+# --- این بخش برای جلوگیری از کرش کردن cargo-dist اضافه شد ---
+[workspace.metadata.dist]
+allow-dirty = ["ci"]
